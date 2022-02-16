@@ -1,4 +1,7 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:melatech/launchpage.dart';
+import 'package:melatech/splash.dart';
 
 import 'homepage.dart';
 
@@ -23,8 +26,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: AnimatedSplashScreen(
+          splash: Image.asset(
+            'image/new.png',
+            width: 500,
+            height: 500,
+          ),
+          duration: 2000,
+          splashTransition: SplashTransition.rotationTransition,
+          backgroundColor: const Color(0xFF4e055a),
+          nextScreen: const LaunchPage()),
     );
   }
 }
-
