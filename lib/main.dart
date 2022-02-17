@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'homepage.dart';
+import 'schedulepage.dart';
+
+// import 'homepage.dart';
 
 // import 'accountpage.dart';
 
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const SchedulePage(),
     );
   }
 }
