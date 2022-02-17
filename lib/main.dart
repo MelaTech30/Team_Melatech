@@ -1,8 +1,10 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:melatech/launchpage.dart';
+// ignore: unused_import
 import 'package:melatech/splash.dart';
 
+// ignore: unused_import
 import 'homepage.dart';
 
 // import 'accountpage.dart';
