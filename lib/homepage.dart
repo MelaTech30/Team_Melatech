@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
             ),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(40),
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
               const SizedBox(height:20),
@@ -86,6 +86,33 @@ class HomePage extends StatelessWidget {
             ),
               decoration: BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+           const SizedBox(height: 10,),
+           Container(child: const ListTile(
+              leading: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Icon(Icons.calendar_today_outlined,
+                color: Color(0xFF4e055a)
+                ),
+              ),
+              title: Text('Request', 
+              style: TextStyle(
+                color: Color(0xFF4e055a),
+                fontWeight: FontWeight.bold
+              )
+              ),
+              subtitle: Text('For pickups I have made'),
+              trailing:Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Icon(Icons.arrow_forward,
+                color: Color(0xFF4e055a)
+                ),
+              )
+            ),
+              decoration: BoxDecoration(
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(40),
               ),
             )
@@ -96,6 +123,7 @@ class HomePage extends StatelessWidget {
         color: Colors.white ,
     child: Row(
       children: [
+        IconButton(icon: const Icon(Icons.alarm), onPressed: () {}),
         IconButton(icon: const Icon(Icons.menu),onPressed: () {}),
        const Spacer(),
         IconButton(icon: const Icon(Icons.home), onPressed: () {}),
