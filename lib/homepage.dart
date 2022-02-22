@@ -123,7 +123,7 @@ class HomePage extends StatelessWidget {
         color: Colors.white ,
     child: Row(
       children: [
-        IconButton(icon: const Icon(Icons.alarm), onPressed: () {}),
+        IconButton(icon: const Icon(Icons.recycling_outlined), onPressed: () {}),
         IconButton(icon: const Icon(Icons.menu),onPressed: () {}),
        const Spacer(),
         IconButton(icon: const Icon(Icons.home), onPressed: () {}),
