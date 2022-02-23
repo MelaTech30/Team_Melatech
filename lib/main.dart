@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'start.dart';
+// import 'start.dart';
 // import 'package:melatech/waste.dart';
 // import 'package:melatech/slider.dart';
 
 // import 'recycle.dart';
-// import 'schedulepage.dart';
+import 'schedulepage.dart';
 
 // import 'homepage.dart';
 
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const StartPage(),
+      home: const SchedulePage(),
     );
   }
 }
