@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/slider.dart';
+import 'package:melatech/waste.dart';
+// import 'package:melatech/slider.dart';
 
 // import 'recycle.dart';
 // import 'schedulepage.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SliderPage(),
+      home: const WastePage(),
     );
   }
 }

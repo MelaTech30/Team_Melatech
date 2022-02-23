@@ -1,5 +1,7 @@
 
 
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,118 +22,54 @@ class HomePage extends StatelessWidget {
         ),
         child: ListView(
           children: [
-            Row(
-              children: [
-                IconButton(onPressed: (){}, icon: const Icon(Icons.menu)),
-               const Spacer(),
-                Image.asset('image/logo.png',
-                width: 50,
-                height: 50,
-                )
-              ],
-            ),
-           const SizedBox(height: 20,),
-            Image.asset('image/new.png',
-            width: 200,
-            height:200
-            ),
            const SizedBox(height:20),
-            Container(child: const ListTile(
-              leading: Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.pin_drop_outlined,
-                color: Color(0xFF4e055a)
-                ),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Image.asset('image/image2.png'),              
+            ),
+            const SizedBox(height:10),
+            Padding(
+              padding: const EdgeInsets.only(left:70, right: 70),
+              child: FlatButton(onPressed: () {},
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5)
               ),
-              title: Text('Start a pickup', 
+               color: const Color(0xFF4e055a),
+              child: const Text('Waste Management', 
               style: TextStyle(
-                color: Color(0xFF4e055a),
-                fontWeight: FontWeight.bold
-              )
-              ),
-              subtitle: Text('Prices that are alocated to each period'),
-              trailing:Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.arrow_forward,
-                color: Color(0xFF4e055a)
-                ),
-              )
-            ),
-              decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
+                fontSize: 15,
+              ),
+              ),
               ),
             ),
-              const SizedBox(height:20),
-            Container(child: const ListTile(
-              leading: Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.calendar_today_outlined,
-                color: Color(0xFF4e055a)
-                ),
+            const SizedBox(height:20),
+            Padding(
+              padding: const EdgeInsets.all(30),
+              child: Card(
+                clipBehavior: Clip.antiAlias,
+                child: Image.asset('image/image3.png'),              
               ),
-              title: Text('Pick Up Schedules', 
+            ),
+            const SizedBox(height:10),
+            Padding(
+              padding: const EdgeInsets.only(left:70, right: 70),
+              child: FlatButton(onPressed: () {},
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5)
+              ),
+               color: const Color(0xFF4e055a),
+              child: const Text('Farm Produce', 
               style: TextStyle(
-                color: Color(0xFF4e055a),
-                fontWeight: FontWeight.bold
-              )
-              ),
-              subtitle: Text('Periods at which your trash is taken'),
-              trailing:Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.arrow_forward,
-                color: Color(0xFF4e055a)
-                ),
-              )
-            ),
-              decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
+                fontSize: 15,
+              ),
+              ),
               ),
             ),
-           const SizedBox(height: 10,),
-           Container(child: const ListTile(
-              leading: Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.calendar_today_outlined,
-                color: Color(0xFF4e055a)
-                ),
-              ),
-              title: Text('Request', 
-              style: TextStyle(
-                color: Color(0xFF4e055a),
-                fontWeight: FontWeight.bold
-              )
-              ),
-              subtitle: Text('For pickups I have made'),
-              trailing:Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.arrow_forward,
-                color: Color(0xFF4e055a)
-                ),
-              )
-            ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(40),
-              ),
-            )
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.white ,
-    child: Row(
-      children: [
-        IconButton(icon: const Icon(Icons.recycling_outlined), onPressed: () {}),
-        IconButton(icon: const Icon(Icons.menu),onPressed: () {}),
-       const Spacer(),
-        IconButton(icon: const Icon(Icons.home), onPressed: () {}),
-        const Spacer(),
-        IconButton(icon: const Icon(Icons.money), onPressed: () {}),
-      ],
-    ),
-  ),
     );
   }
 }

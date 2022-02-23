@@ -48,7 +48,7 @@ class SchedulePage extends StatelessWidget {
                   
                 ],
               ),
-              title: Divider(),
+              title: const Divider(),
             ),
           ),
           ]
