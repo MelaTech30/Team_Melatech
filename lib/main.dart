@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/waste.dart';
+
+import 'start.dart';
+// import 'package:melatech/waste.dart';
 // import 'package:melatech/slider.dart';
 
 // import 'recycle.dart';
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const WastePage(),
+      home: const StartPage(),
     );
   }
 }

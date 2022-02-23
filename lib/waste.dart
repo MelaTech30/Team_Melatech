@@ -9,16 +9,20 @@ class WastePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.white,
         title: const Center(child:  Text('Waste Management',
         style: TextStyle(
           color:  Color(0xFF4e055a),
         )
         )),
-        actions: [Padding(
-          padding: const EdgeInsets.only(right:15),
+        actions: const [  Padding(
+          padding:  EdgeInsets.only(right:15),
           child: CircleAvatar(
-            child: Image.asset('image/logo.png')
+            backgroundColor: Color(0xFFe5e5e5),
+            child: Icon(Icons.person, 
+            size: 35, 
+            color: Colors.white,),
           ),
         )],
       ),
