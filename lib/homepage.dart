@@ -23,13 +23,19 @@ class HomePage extends StatelessWidget {
         child: ListView(
           children: [
            const SizedBox(height:20),
-            Card(
-              clipBehavior: Clip.antiAlias,
-              child: Image.asset('image/image2.png'),              
+            Padding(
+              padding: const EdgeInsets.only(left:70, right:70),
+              child: Card(
+                clipBehavior: Clip.antiAlias,
+                child: Image.asset('image/image2.jpg',
+                width:80,
+                height:280
+                ),              
+              ),
             ),
             const SizedBox(height:10),
             Padding(
-              padding: const EdgeInsets.only(left:70, right: 70),
+              padding: const EdgeInsets.all(20),
               child: FlatButton(onPressed: () {},
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5)

@@ -11,14 +11,9 @@ class SchedulePage extends StatelessWidget {
       appBar: AppBar(
         actions: const [
           Padding(
-            padding: EdgeInsets.only(right:15),
-            child: CircleAvatar(
-              backgroundColor: Color(0xFFe5e5e5),
-              child: Icon(Icons.person, 
-              size: 35,
-              color: Colors.white,
-              )
-            ),
+            padding: EdgeInsets.only(right:10),
+            child: Icon(Icons.more_vert, 
+            color: Color(0xFF4e055a)),
           )
         ],
         backgroundColor:  Colors.white,
@@ -37,16 +32,6 @@ class SchedulePage extends StatelessWidget {
         ),
         child: ListView(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Title(color: const Color(0xFF4ccce8),
-               child: const Center(
-                 child: Text('Sorting Days', style: TextStyle(
-                   color: Colors.white,
-                   fontSize: 20,
-                 ),),
-               )),
-            ),
          const SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.only(left:20, right: 20),
