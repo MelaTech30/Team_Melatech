@@ -29,10 +29,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: AnimatedSplashScreen(
-          splash: Image.asset(
-            'image/new.png',
+          splash: Container(
             width: 500,
             height: 500,
+            child: Image.asset(
+              'image/yet.png',
+              // width: 500,
+              // height: 500,
+            ),
           ),
           duration: 2000,
           splashTransition: SplashTransition.rotationTransition,
