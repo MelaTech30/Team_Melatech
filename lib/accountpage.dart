@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:melatech/loginpage.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({ Key? key }) : super(key: key);
@@ -166,7 +167,7 @@ class AccountPage extends StatelessWidget {
              const SizedBox(height:20),
               Padding(
                 padding: const EdgeInsets.only(left:50, right:100),
-                child: TextButton(onPressed: (){} , 
+                child: TextButton(onPressed: ()=> const LoginPage() , 
              style: ButtonStyle(
                  backgroundColor: MaterialStateProperty.all(Colors.white),
                  foregroundColor: MaterialStateProperty.all(const Color(0xFF4e055a)),

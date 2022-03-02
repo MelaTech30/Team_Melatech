@@ -1,16 +1,13 @@
-
-
 import 'package:flutter/material.dart';
-import 'package:melatech/homepage.dart';
-import 'package:melatech/reset.dart';
+import 'package:melatech/loginpage.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({ Key? key }) : super(key: key);
+class ResetPage extends StatelessWidget {
+  const ResetPage({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(colors: [
             Color(0xFF4e055a),
@@ -23,13 +20,12 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: [
             const SizedBox(height: 15,),
-        const  Center(
-            child:   Text('Login', 
-              style: TextStyle(fontSize: 20,
-               color: Colors.white),
-              ),
-          ),
-           const SizedBox(height: 95,),
+          const Center(child: Text('Reset Password',
+           style: TextStyle(color: Colors.white,
+           fontSize: 30
+           ),
+           )),
+            const SizedBox(height: 70,),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -39,7 +35,9 @@ class LoginPage extends StatelessWidget {
                   decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.email),
+                      child: Icon(Icons.email, 
+                      color: Color(0xFF4e055a)
+                      ),
                     ),
                     label: Text('Email',
                     style: TextStyle(
@@ -52,7 +50,8 @@ class LoginPage extends StatelessWidget {
                   ),
                 ), 
               ),
-             const SizedBox(height: 30,),
+             const SizedBox(height: 10,),
+               
               Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -62,9 +61,33 @@ class LoginPage extends StatelessWidget {
                   decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.lock),
+                      child: Icon(Icons.lock,
+                      color:Color(0xFF4e055a)
+                      ),
                     ),
-                    label: Text('Password',
+                    label: Text('New Password', 
+                    style:TextStyle(color: Color(0xFF4e055a))),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide.none
+                    )
+                  ),
+                ), 
+              ),
+             const SizedBox(height:10,),
+              Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                ),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    icon: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Icon(Icons.lock,
+                      color: Color(0xFF4e055a)
+                      ),
+                    ),
+                    label: Text('Confirm Password',
                     style:TextStyle(color: Color(0xFF4e055a))
                     ),
                     border: OutlineInputBorder(
@@ -74,11 +97,9 @@ class LoginPage extends StatelessWidget {
                 ), 
               ),
              const SizedBox(height:20),
-            InkWell( onTap: ()=> const ResetPage(),
-              child: const Text('Forgot password?')),
               Padding(
                 padding: const EdgeInsets.only(left:50, right:100),
-                child: TextButton(onPressed: ()=> const HomePage() , 
+                child: TextButton(onPressed: ()=> const LoginPage() , 
              style: ButtonStyle(
                  backgroundColor: MaterialStateProperty.all(Colors.white),
                  foregroundColor: MaterialStateProperty.all(const Color(0xFF4e055a)),
@@ -89,7 +110,7 @@ class LoginPage extends StatelessWidget {
                  ),
              ),
              child:
-            const Text('Sign in')
+            const Text('Confirm')
             ),
               )
           ],

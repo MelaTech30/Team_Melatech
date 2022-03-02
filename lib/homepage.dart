@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
+import 'package:melatech/food.dart';
+import 'package:melatech/waste.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height:10),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: FlatButton(onPressed: () {},
+              child: FlatButton(onPressed: ()=> const WastePage(),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5)
               ),
@@ -58,7 +59,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height:10),
             Padding(
               padding: const EdgeInsets.only(left:70, right: 70),
-              child: FlatButton(onPressed: () {},
+              child: FlatButton(onPressed: ()=> const FoodPage(),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5)
               ),
