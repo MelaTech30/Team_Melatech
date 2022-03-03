@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'rewards.dart';
+import 'package:melatech/food.dart';
+// import 'rewards.dart';
 
 // import 'start.dart';
 // import 'package:melatech/waste.dart';
@@ -27,11 +28,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'MelaTech',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  RewardPage(),
+      home: const FoodPage(),
     );
   }
 }

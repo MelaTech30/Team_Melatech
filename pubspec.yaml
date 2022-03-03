@@ -68,6 +68,13 @@ flutter:
      - image/green.png
      - image/image2.jpg
      - image/image3.png
+     - image/veg1.jpg
+     - image/veg2.jpg
+     - image/veg3.jpg
+     - image/veg4.jpg
+     - image/veg5.jpg
+     - image/veg6.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
