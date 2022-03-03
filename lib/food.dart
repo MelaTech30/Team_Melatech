@@ -36,7 +36,7 @@ void _onItemTapped(int index){
   type: BottomNavigationBarType.fixed,
   backgroundColor:const Color(0xFFffffff),
   selectedItemColor: const Color(0xFF4e055a),
-  unselectedItemColor: Color(0xFF4e055a).withOpacity(.60),
+  unselectedItemColor: const Color(0xFF4e055a).withOpacity(.60),
   selectedFontSize: 14,
   unselectedFontSize: 14,
   onTap: _onItemTapped,

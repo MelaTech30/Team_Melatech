@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: AnimatedSplashScreen(
-          splash: Container(
+          splash: SizedBox(
             width: 500,
             height: 500,
             child: Image.asset(

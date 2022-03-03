@@ -23,6 +23,15 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
+        actions: const [Padding(
+          padding:  EdgeInsets.only(right:15),
+          child: CircleAvatar(
+            backgroundColor: Color(0xFFe5e5e5),
+            child: Icon(Icons.person,
+            color: Colors.white,
+            ),
+          ),
+        )],
       ),
       body: Container(
         decoration: const BoxDecoration(
