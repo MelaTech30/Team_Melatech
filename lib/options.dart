@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class OptionsPage extends StatelessWidget {
@@ -7,7 +5,7 @@ class OptionsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.greenAccent,
     );
   }
