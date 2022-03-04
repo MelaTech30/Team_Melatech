@@ -31,7 +31,12 @@ class HomePage extends StatelessWidget {
             color: Colors.white,
             ),
           ),
-        )],
+        ),
+      Icon(Icons.more_vert,
+      color: Color(0xFF4e055a),
+      )
+      
+      ],
       ),
       body: Container(
         decoration: const BoxDecoration(
