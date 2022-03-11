@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.melatech">
+    package="com.example.ecocycle">
    <application
-        android:label="melatech"
+        android:label="ecocycle"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

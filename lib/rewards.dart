@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
-import 'package:melatech/trash.dart';
-import 'package:melatech/trash_chart.dart';
+import 'package:ecocycle/trash.dart';
+import 'package:ecocycle/trash_chart.dart';
 
 
 

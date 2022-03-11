@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/food.dart';
+import 'package:ecocycle/options.dart';
+
+// import 'dropdown.dart';
+
+// import 'cart.dart';
+// import 'package:ecocyle/food.dart';
 // import 'rewards.dart';
 
 // import 'start.dart';
-// import 'package:melatech/waste.dart';
-// import 'package:melatech/slider.dart';
+// import 'package:ecocycle/waste.dart';
+// import 'package:ecocycle/slider.dart';
 
 // import 'recycle.dart';
 // import 'schedulepage.dart';
 
-// import 'homepage.dart';
+import 'homepage.dart';
 
 // import 'accountpage.dart';
 
 // import 'launchpage.dart';
-// import 'loginpage.dart';
+import 'loginpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,11 +33,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MelaTech',
+      title: 'ecocycle',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FoodPage(),
+      home: const OptionsPage(),
+      //  home: const HomePage(),
     );
   }
 }
