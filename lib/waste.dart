@@ -11,7 +11,7 @@ class WastePage extends StatelessWidget {
         backgroundColor: Colors.white,
         title: const Center(child:  Text('Waste Management',
         style: TextStyle(
-          color:  Color(0xFF4e055a),
+          color:  Color(0xFF4ccce8),
         )
         )),
         actions: const [  Padding(
@@ -25,7 +25,7 @@ class WastePage extends StatelessWidget {
         )],
       ),
       body: Container(
-        color: const Color(0xFF4e055a),
+        color: Colors.blue,
         child: ListView(
           children: [
            const SizedBox(height:20),

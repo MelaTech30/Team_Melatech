@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ecocycle/options.dart';
-
 // import 'dropdown.dart';
 
-// import 'cart.dart';
+import 'cart.dart';
 // import 'package:ecocyle/food.dart';
 // import 'rewards.dart';
 
@@ -13,13 +12,12 @@ import 'package:ecocycle/options.dart';
 
 // import 'recycle.dart';
 // import 'schedulepage.dart';
-
 import 'homepage.dart';
 
 // import 'accountpage.dart';
-
 // import 'launchpage.dart';
-import 'loginpage.dart';
+// import 'loginpage.dart';
+import 'veges.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,8 +35,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const OptionsPage(),
-      //  home: const HomePage(),
+      home: const HomePage(),
+      //  home: const VegesPage(),
+      //  home: const WastePage(),
+      //  home: const CartPage(),
+      //  home: const OptionsPage(),
     );
   }
 }

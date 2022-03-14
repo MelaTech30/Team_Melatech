@@ -29,7 +29,7 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF4ccce8),
+      backgroundColor: Colors.orangeAccent,
       body: ListView(
         children: <Widget> [          
            Row(

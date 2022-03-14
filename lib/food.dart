@@ -61,28 +61,8 @@ void _onItemTapped(int index){
     ),
   ],
   currentIndex: _currentIndex,
-),
-    //   bottomNavigationBar: BottomAppBar(
-    //     elevation: 0,
-    //     color: Colors.white,
-    //     child: Row(
-    //   children: [
-    //     IconButton(icon: const Icon(Icons.home), 
-    //     color: const Color(0xFF4e055a),
-    //     onPressed: () {}),
-    //    const Spacer(),
-    //     IconButton(icon: const Icon(Icons.shopping_cart_outlined),
-    //     color: const Color(0xFF4e055a),
-    //      onPressed: () {}),
-    //    const  Spacer(),
-    //     IconButton(icon: const Icon(Icons.more_vert),
-    //     color: const Color(0xFF4e055a),
-    //      onPressed: () {}),
-    //   ],
-    // ),
-    //   ),
-      body: _children[_currentIndex],
-      
+),    
+  body: _children[_currentIndex],      
     );
   }
 }

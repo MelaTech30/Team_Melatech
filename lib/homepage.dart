@@ -1,5 +1,3 @@
-
-
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
@@ -12,6 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         actions: [
            PopupMenuButton(
   icon: const Icon(
@@ -72,24 +71,15 @@ class HomePage extends StatelessWidget {
 ),
         ],
       ),
-      body: Container(
-         decoration: const BoxDecoration(
-          gradient: LinearGradient(colors: [
-            Color(0xFF4e055a),
-            Color(0xFF4ccce8)
-          ],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          ),
-        ),
-        child: ListView(
+      backgroundColor: Colors.white,
+      body: ListView(
           children: [
            const SizedBox(height:20),
             Padding(
               padding: const EdgeInsets.only(left:70, right:70),
               child: Card(
                 clipBehavior: Clip.antiAlias,
-                child: Image.asset('image/image2.jpg',
+                child: Image.asset('image/rec1.png',
                 width:80,
                 height:280
                 ),              
@@ -97,23 +87,23 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height:10),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.only(left:70, right:70),
               child: FlatButton(onPressed: () {},
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5)
               ),
-               color: const Color(0xFF4e055a),
-              child: const Text('Waste Management', 
+               color: const Color(0xFF4ccce8),
+              child: const Text('Recycle', 
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.orangeAccent,
                 fontSize: 15,
               ),
               ),
               ),
             ),
-            const SizedBox(height:20),
+            const SizedBox(height:10),
             Padding(
-              padding: const EdgeInsets.all(30),
+              padding: const EdgeInsets.only(left:50, right: 50),
               child: Card(
                 clipBehavior: Clip.antiAlias,
                 child: Image.asset('image/image3.png'),              
@@ -126,18 +116,17 @@ class HomePage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5)
               ),
-               color: const Color(0xFF4e055a),
+               color: const Color(0xFF4ccce8),
               child: const Text('Farm Produce', 
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.orangeAccent,
                 fontSize: 15,
               ),
               ),
               ),
             ),
           ],
-        ),
-      ),
+        ),      
     );
   }
 }

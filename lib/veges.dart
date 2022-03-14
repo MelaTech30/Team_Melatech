@@ -10,7 +10,7 @@ class VegesPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          color:Color(0xFF4ccce8),
+          color:Colors.white,
         ),
         child: ListView(
           children:  <Widget> [

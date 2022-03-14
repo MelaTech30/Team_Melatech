@@ -6,7 +6,7 @@ class OptionsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF4ccce8),
+      backgroundColor:  Colors.white,
       body: ListView(
         children: <Widget> [
          const  SizedBox( height: 20),
@@ -17,14 +17,14 @@ class OptionsPage extends StatelessWidget {
                     Icon(
                       Icons.location_on_outlined,
                       color: Color(0xFF4e055a),
-                       size: 50
+                       size: 30
                     ),
                     SizedBox( width: 10),
                     Text(
                       'My location',
                       style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
+                        color: Color(0xFF4e055a),
+                        fontSize: 20,
                       ),
                     )
                   ],            
@@ -38,14 +38,14 @@ class OptionsPage extends StatelessWidget {
                     Icon(
                       Icons.money_rounded,
                       color: Color(0xFF4e055a),
-                      size: 50
+                      size: 30
                     ),
                     SizedBox( width: 10),
                     Text(
                       'Trash Cash balance',
                       style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
+                        color: Color(0xFF4e055a),
+                        fontSize: 20,
                       ),
                     )
                   ],            
@@ -59,14 +59,14 @@ class OptionsPage extends StatelessWidget {
                     Icon(
                       Icons.checklist_outlined,
                       color: Color(0xFF4e055a),
-                       size: 50
+                       size: 30
                     ),
                     SizedBox( width: 10),
                     Text(
                       'Invoice',
                       style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
+                        color: Color(0xFF4e055a),
+                        fontSize: 20,
                       ),
                     )
                   ],            
@@ -80,14 +80,14 @@ class OptionsPage extends StatelessWidget {
                     Icon(
                       Icons.location_on_outlined,
                       color: Color(0xFF4e055a),
-                       size: 50
+                       size: 30
                     ),
                     SizedBox( width: 10),
                     Text(
                       'My location',
                       style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
+                        color: Color(0xFF4e055a),
+                        fontSize: 20,
                       ),
                     )
                   ],            
