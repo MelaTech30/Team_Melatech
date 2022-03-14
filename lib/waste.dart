@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:melatech/profile.dart';
 import 'package:melatech/rewards.dart';
 import 'package:melatech/schedulepage.dart';
 import 'package:melatech/start.dart';
@@ -18,15 +19,23 @@ class WastePage extends StatelessWidget {
                 style: TextStyle(
                   color: Color(0xFF4e055a),
                 ))),
-        actions: const [
+        actions: [
           Padding(
-            padding: EdgeInsets.only(right: 15),
-            child: CircleAvatar(
-              backgroundColor: Color(0xFFe5e5e5),
-              child: Icon(
-                Icons.person,
-                size: 35,
-                color: Colors.white,
+            padding: const EdgeInsets.only(right: 15),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ProfilePage()));
+              },
+              child: const CircleAvatar(
+                backgroundColor: Color(0xFFe5e5e5),
+                child: Icon(
+                  Icons.person,
+                  size: 35,
+                  color: Colors.white,
+                ),
               ),
             ),
           )

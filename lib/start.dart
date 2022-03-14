@@ -17,14 +17,10 @@ class StartPage extends StatelessWidget {
                 ))),
         actions: const [
           Padding(
-            padding: EdgeInsets.only(right: 15),
-            child: CircleAvatar(
-              backgroundColor: Color(0xFFe5e5e5),
-              child: Icon(
-                Icons.person,
-                size: 35,
-                color: Colors.white,
-              ),
+            padding: EdgeInsets.only(right: 20),
+            child: Icon(
+              Icons.more_vert,
+              color: Colors.white,
             ),
           )
         ],
