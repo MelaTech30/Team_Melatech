@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecocycle/options.dart';
+import 'package:agritech_cycle/options.dart';
 // import 'dropdown.dart';
 
 import 'cart.dart';
@@ -7,8 +7,8 @@ import 'cart.dart';
 // import 'rewards.dart';
 
 // import 'start.dart';
-// import 'package:ecocycle/waste.dart';
-// import 'package:ecocycle/slider.dart';
+// import 'package:agritech_cycle/waste.dart';
+// import 'package:agritech_cycle/slider.dart';
 
 // import 'recycle.dart';
 // import 'schedulepage.dart';
@@ -17,6 +17,7 @@ import 'homepage.dart';
 // import 'accountpage.dart';
 // import 'launchpage.dart';
 // import 'loginpage.dart';
+import 'profile.dart';
 import 'veges.dart';
 
 void main() {
@@ -31,15 +32,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ecocycle',
+      title: 'agritech_cycle',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      // home: const HomePage(),
       //  home: const VegesPage(),
       //  home: const WastePage(),
       //  home: const CartPage(),
       //  home: const OptionsPage(),
+       home: const Profile(),
     );
   }
 }

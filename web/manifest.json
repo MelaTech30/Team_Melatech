@@ -1,6 +1,6 @@
 {
-    "name": "ecocycle",
-    "short_name": "ecocycle",
+    "name": "agritech_cycle",
+    "short_name": "agritech_cycle",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

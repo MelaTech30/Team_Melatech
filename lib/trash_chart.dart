@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecocycle/trash.dart';
+import 'package:agritech_cycle/trash.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class Trash extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ecocycle/cart.dart';
-import 'package:ecocycle/options.dart';
-import 'package:ecocycle/veges.dart';
+import 'package:agritech_cycle/cart.dart';
+import 'package:agritech_cycle/options.dart';
+import 'package:agritech_cycle/veges.dart';
 
 class FoodPage extends StatefulWidget {
   const FoodPage({ Key? key }) : super(key: key);

@@ -1,4 +1,4 @@
-# ecocycle
+# agritech_cycle
 
 A new Flutter project.
 
