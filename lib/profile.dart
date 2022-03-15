@@ -57,9 +57,8 @@ class ProfilePage extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               children: const <Widget>[
                Text('data'),
-                Text('data'),
-                Text('data'),
-                Text('data'),
+               Text('data'),
+               Text('data'),                
               ],
             ),
           ),
