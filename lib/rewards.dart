@@ -4,7 +4,8 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:melatech/trash.dart';
 import 'package:melatech/trash_chart.dart';
 
-class RewardPage extends StatelessWidget {
+// ignore: use_key_in_widget_constructors
+class  RewardPage extends StatelessWidget {
   final List<TrashChart> data = [
     TrashChart(
       month: 'Jan',

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'edit.dart';
+
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -8,7 +10,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blueAccent,
         title: const Padding(
           padding: EdgeInsets.only(left: 60, right: 0),
           child: Text(
@@ -17,14 +19,14 @@ class ProfilePage extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: Colors.white,
       body: Column(children: <Widget>[
         const SizedBox(
           height: 25,
         ),
         const Center(
           child: CircleAvatar(
-            backgroundColor: const Color(0xFFe5e5e5),
+            backgroundColor: Color(0xFFe5e5e5),
             radius: 70,
             child: Icon(
               Icons.person,
@@ -62,7 +64,18 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
         ),
-      ]),
+        const SizedBox(height: 20,),
+        FlatButton(
+          color: Colors.lightBlueAccent,
+          shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),            
+              ),
+          onPressed: (){
+          showModalBottomSheet(context: context, builder: (context) => const Edit());
+        }, 
+        child: const Text('Edit details'))
+      ],
+     ),
     );
   }
 }
