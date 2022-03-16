@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:melatech/add.dart';
 
 class SchedulePage extends StatelessWidget {
   const SchedulePage({Key? key}) : super(key: key);
@@ -8,11 +9,57 @@ class SchedulePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 10),
-            child: Icon(Icons.more_vert, color: Color(0xFF4e055a)),
-          )
+        actions: [
+          PopupMenuButton(
+            icon: const Icon(Icons.more_vert, color: Color(0xFF4e055a)),
+            itemBuilder: (BuildContext context) => <PopupMenuEntry>[
+              PopupMenuItem(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const AddPage()));
+                },
+                child: const ListTile(
+                  leading: Icon(
+                    Icons.add_box,
+                    color: Color(0xFF4e055a),
+                  ),
+                  title: Text(
+                    'Add schedule',
+                    style: TextStyle(
+                      color: Color(0xFF4e055a),
+                    ),
+                  ),
+                ),
+              ),
+              const PopupMenuItem(
+                  child: ListTile(
+                leading: Icon(
+                  Icons.settings,
+                  color: Color(0xFF4e055a),
+                ),
+                title: Text(
+                  'Settings',
+                  style: TextStyle(
+                    color: Color(0xFF4e055a),
+                  ),
+                ),
+              )),
+              PopupMenuItem(
+                  onTap: () {},
+                  child: const ListTile(
+                    leading: Icon(
+                      Icons.logout,
+                      color: Color(0xFF4e055a),
+                    ),
+                    title: Text(
+                      'Logout',
+                      style: TextStyle(
+                        color: Color(0xFF4e055a),
+                      ),
+                    ),
+                  )),
+            ],
+          ),
         ],
         backgroundColor: Colors.white,
         title: const Center(
