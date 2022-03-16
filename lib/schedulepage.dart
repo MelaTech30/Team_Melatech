@@ -10,56 +10,15 @@ class SchedulePage extends StatelessWidget {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
         actions: [
-          PopupMenuButton(
-            icon: const Icon(Icons.more_vert, color: Color(0xFF4e055a)),
-            itemBuilder: (BuildContext context) => <PopupMenuEntry>[
-              PopupMenuItem(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const AddPage()));
-                },
-                child: const ListTile(
-                  leading: Icon(
-                    Icons.add_box,
-                    color: Color(0xFF4e055a),
-                  ),
-                  title: Text(
-                    'Add schedule',
-                    style: TextStyle(
-                      color: Color(0xFF4e055a),
-                    ),
-                  ),
-                ),
-              ),
-              const PopupMenuItem(
-                  child: ListTile(
-                leading: Icon(
-                  Icons.settings,
-                  color: Color(0xFF4e055a),
-                ),
-                title: Text(
-                  'Settings',
-                  style: TextStyle(
-                    color: Color(0xFF4e055a),
-                  ),
-                ),
-              )),
-              PopupMenuItem(
-                  onTap: () {},
-                  child: const ListTile(
-                    leading: Icon(
-                      Icons.logout,
-                      color: Color(0xFF4e055a),
-                    ),
-                    title: Text(
-                      'Logout',
-                      style: TextStyle(
-                        color: Color(0xFF4e055a),
-                      ),
-                    ),
-                  )),
-            ],
-          ),
+          IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const AddPage()));
+              },
+              icon: Icon(
+                Icons.add_box,
+                size: 40,
+              ))
         ],
         backgroundColor: Colors.white,
         title: const Center(
