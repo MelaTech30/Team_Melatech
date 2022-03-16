@@ -35,33 +35,21 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 15),
-        FlatButton(
-          onPressed: () {},
-          child: const Text(
-            'Change profile picture',
-          ),
-          color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(5),
-          ),
-        ),
+        const SizedBox(height: 15),        
         Container(
           decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.white,
               borderRadius: BorderRadius.circular(5)),
           height: 100,
-          child: ListTile(
-            leading: Column(
+          child: Column(
               mainAxisSize: MainAxisSize.max,
               children: const <Widget>[
-               Text('data'),
-               Text('data'),
-               Text('data'),                
-              ],
-            ),
-          ),
+               Text('Leticia Kumah'),
+               Text('lety.kumah@gmail.com'),
+               Text('0550020378'),                
+              ],            
+           ),
         ),
         const SizedBox(height: 20,),
         FlatButton(
