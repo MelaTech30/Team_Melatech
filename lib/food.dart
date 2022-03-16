@@ -34,7 +34,7 @@ void _onItemTapped(int index){
     return  Scaffold(
       bottomNavigationBar: BottomNavigationBar(
   type: BottomNavigationBarType.fixed,
-  backgroundColor:const Color(0xFFffffff),
+  backgroundColor: Colors.lightGreen,
   selectedItemColor: const Color(0xFF4e055a),
   unselectedItemColor: const Color(0xFF4e055a).withOpacity(.60),
   selectedFontSize: 14,

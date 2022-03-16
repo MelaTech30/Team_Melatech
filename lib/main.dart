@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
           ),
           duration: 2000,
           splashTransition: SplashTransition.rotationTransition,
-          backgroundColor: const Color(0xFF4e055a),
+          backgroundColor: Colors.lightGreen,
           nextScreen: const LaunchPage()),
     );
   }

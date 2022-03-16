@@ -9,11 +9,7 @@ class AccountPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF4e055a), Color(0xFF4ccce8)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
+          color: Colors.lightGreen,
         ),
         child: ListView(
           children: [

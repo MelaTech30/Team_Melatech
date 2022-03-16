@@ -5,8 +5,42 @@ class OptionsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.greenAccent,
+    return  Scaffold(
+      backgroundColor: Colors.white,
+      body: ListView(
+        children: <Widget> [
+          Padding(
+            padding: const EdgeInsets.only(left:10),
+            child: Row(
+              children: const <Widget> [
+                Icon(Icons.location_on_sharp),
+                SizedBox(width: 10),
+                Text('Location'),
+              ],
+            ),
+          ),
+           Padding(
+            padding: const EdgeInsets.only(left:10),
+            child: Row(
+              children: const <Widget> [
+                Icon(Icons.checklist),
+                SizedBox(width: 10),
+                Text('Invoice'),
+              ],
+            ),
+          ),
+           Padding(
+            padding: const EdgeInsets.only(left:10),
+            child: Row(
+              children: const <Widget> [
+                Icon(Icons.money),
+                SizedBox(width: 10),
+                Text('Balance'),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

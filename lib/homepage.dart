@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:melatech/food.dart';
+import 'package:melatech/profile.dart';
 import 'package:melatech/waste.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,28 +24,31 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        actions: const [Padding(
-          padding:  EdgeInsets.only(right:15),
-          child: CircleAvatar(
-            backgroundColor: Color(0xFFe5e5e5),
-            child: Icon(Icons.person,
-            color: Colors.white,
+        actions:  [Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ProfilePage()));
+              },
+              child: const CircleAvatar(
+                backgroundColor: Color(0xFFe5e5e5),
+                child: Icon(
+                  Icons.person,
+                  size: 35,
+                  color: Colors.white,
+                ),
+              ),
             ),
-          ),
-        ),
-      Icon(Icons.more_vert,
-      color: Color(0xFF4e055a),
-      )
+          )
       
       ],
       ),
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF4e055a), Color(0xFF4ccce8)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
+         color: Colors.lightGreen,
         ),
         child: ListView(
           children: [
@@ -53,11 +57,11 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 70, right: 70),
               child: Card(
                 clipBehavior: Clip.antiAlias,
-                child: Image.asset('image/image2.jpg', width: 80, height: 280),
+                child: Image.asset('image/rec1.png', width: 80, height: 280),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.only(left:80, right: 80),
               child: FlatButton(
                 onPressed: () {
                   Navigator.push(
@@ -68,9 +72,9 @@ class HomePage extends StatelessWidget {
                 },
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5)),
-                color: const Color(0xFF4e055a),
+                color: Colors.lightBlue,
                 child: const Text(
-                  'Waste Management',
+                  'Recycle',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
@@ -87,7 +91,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 70, right: 70),
+              padding: const EdgeInsets.only(left:80, right: 80),
               child: FlatButton(
                 onPressed: () {
                   Navigator.push(
@@ -98,7 +102,7 @@ class HomePage extends StatelessWidget {
                 },
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5)),
-                color: const Color(0xFF4e055a),
+                color:  Colors.lightBlue,
                 child: const Text(
                   'Farm Produce',
                   style: TextStyle(
