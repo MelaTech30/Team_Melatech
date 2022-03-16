@@ -10,7 +10,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.white,
         title: const Padding(
           padding: EdgeInsets.only(left: 60, right: 0),
           child: Text(
