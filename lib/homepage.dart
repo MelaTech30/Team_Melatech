@@ -2,7 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:melatech/food.dart';
 import 'package:melatech/profile.dart';
+import 'package:melatech/settings.dart';
 import 'package:melatech/waste.dart';
+import 'package:modal_side_sheet/modal_side_sheet.dart';
 
 import 'loginpage.dart';
 
@@ -27,76 +29,11 @@ class HomePage extends StatelessWidget {
           ),
         ),
         actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ProfilePage()));
+          IconButton(
+              onPressed: () {
+                showModalSideSheet(context: context, body: const Settings());
               },
-              child: const CircleAvatar(
-                backgroundColor: Color(0xFFe5e5e5),
-                child: Icon(
-                  Icons.person,
-                  size: 35,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-          PopupMenuButton(
-            icon: const Icon(Icons.more_vert, color: Color(0xFF4e055a)),
-            itemBuilder: (BuildContext context) => <PopupMenuEntry>[
-              const PopupMenuItem(
-                child: ListTile(
-                  leading: Icon(
-                    Icons.person,
-                    color: Color(0xFF4e055a),
-                  ),
-                  title: Text(
-                    'About us',
-                    style: TextStyle(
-                      color: Color(0xFF4e055a),
-                    ),
-                  ),
-                ),
-              ),
-              const PopupMenuItem(
-                  child: ListTile(
-                leading: Icon(
-                  Icons.settings,
-                  color: Color(0xFF4e055a),
-                ),
-                title: Text(
-                  'Settings',
-                  style: TextStyle(
-                    color: Color(0xFF4e055a),
-                  ),
-                ),
-              )),
-              PopupMenuItem(
-                  onTap: () {
-                    Navigator.pop(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const LoginPage()));
-                  },
-                  child: const ListTile(
-                    leading: Icon(
-                      Icons.logout,
-                      color: Color(0xFF4e055a),
-                    ),
-                    title: Text(
-                      'Logout',
-                      style: TextStyle(
-                        color: Color(0xFF4e055a),
-                      ),
-                    ),
-                  )),
-            ],
-          ),
+              icon: const Icon(Icons.settings, size: 30))
         ],
       ),
       body: Container(
