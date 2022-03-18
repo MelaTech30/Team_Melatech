@@ -40,6 +40,10 @@ dependencies:
   modal_side_sheet:
   flutter_launcher_icons: "^0.9.2"
   rename: ^2.0.1
+  geolocator:
+
+
+  
 flutter_icons:
   android: true
   ios: true
