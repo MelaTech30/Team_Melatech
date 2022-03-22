@@ -1,8 +1,10 @@
+import 'package:agritech_cycle/side_sheet.dart';
 import 'package:flutter/material.dart';
-import 'package:agritech_cycle/options.dart';
+// import 'package:agritech_cycle/options.dart';
 // import 'dropdown.dart';
 
-import 'cart.dart';
+// import 'add.dart';
+// import 'cart.dart';
 // import 'package:ecocyle/food.dart';
 // import 'rewards.dart';
 
@@ -12,13 +14,13 @@ import 'cart.dart';
 
 // import 'recycle.dart';
 // import 'schedulepage.dart';
-import 'homepage.dart';
+// import 'homepage.dart';
 
 // import 'accountpage.dart';
 // import 'launchpage.dart';
 // import 'loginpage.dart';
-import 'profile.dart';
-import 'veges.dart';
+// import 'profile.dart';
+// import 'veges.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +43,9 @@ class MyApp extends StatelessWidget {
       //  home: const WastePage(),
       //  home: const CartPage(),
       //  home: const OptionsPage(),
-       home: const Profile(),
+      //  home: const Profile(),
+        // home: MyHomePage(),
+        home: const SideSheet(),
     );
   }
 }
