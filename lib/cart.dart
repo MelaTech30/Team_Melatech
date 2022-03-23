@@ -108,16 +108,14 @@ class _CartPageState extends State<CartPage> {
                 const SizedBox(
                   width: 20,
                 ),
-                FlatButton(
-                  onPressed: () {},
-                  color: const Color(0xFF4e055a),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30)),
-                  child: const Icon(
-                    Icons.arrow_drop_down,
-                    color: Colors.white,
-                  ),
-                ),
+               PopupMenuButton(
+  icon: Icon(Icons.more_vert),
+  itemBuilder: (BuildContext context) => <PopupMenuEntry>[   
+    const PopupMenuItem(child: Text('Caton')),
+    const PopupMenuItem(child: Text('Sack')),
+    const PopupMenuItem(child: Text('Bucket')),
+  ],
+),
               ],
             ),
           ),
