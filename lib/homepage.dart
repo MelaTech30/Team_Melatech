@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:melatech/food.dart';
 import 'package:melatech/profile.dart';
-import 'package:melatech/settings.dart';
+import 'package:melatech/menu.dart';
 import 'package:melatech/waste.dart';
 import 'package:modal_side_sheet/modal_side_sheet.dart';
 
@@ -31,9 +31,9 @@ class HomePage extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {
-                showModalSideSheet(context: context, body: const Settings());
+                showModalSideSheet(context: context, body: const Menu());
               },
-              icon: const Icon(Icons.settings, size: 30))
+              icon: const Icon(Icons.menu, size: 30))
         ],
       ),
       body: Container(
