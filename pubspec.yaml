@@ -47,7 +47,7 @@ dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "image/app_logo.png"
+  image_path: "image/nev.png"
 
 dev_dependencies:
   flutter_test:
