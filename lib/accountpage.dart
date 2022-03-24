@@ -24,25 +24,6 @@ class AccountPage extends StatelessWidget {
             const SizedBox(
               height: 70,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: TextFormField(
-                  decoration: const InputDecoration(
-                      icon: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Icon(Icons.email, color: Color(0xFF4e055a)),
-                      ),
-                      label: Text('Email',
-                          style: TextStyle(color: Color(0xFF4e055a))),
-                      border: OutlineInputBorder(borderSide: BorderSide.none)),
-                ),
-              ),
-            ),
             const SizedBox(
               height: 10,
             ),
@@ -148,6 +129,28 @@ class AccountPage extends StatelessWidget {
                         child: Icon(Icons.lock, color: Color(0xFF4e055a)),
                       ),
                       label: Text('Confirm Password',
+                          style: TextStyle(color: Color(0xFF4e055a))),
+                      border: OutlineInputBorder(borderSide: BorderSide.none)),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+             Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      icon: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Icon(Icons.email, color: Color(0xFF4e055a)),
+                      ),
+                      label: Text('Email',
                           style: TextStyle(color: Color(0xFF4e055a))),
                       border: OutlineInputBorder(borderSide: BorderSide.none)),
                 ),
