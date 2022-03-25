@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "495464109699",
+    "project_id": "agritechcycle-app",
+    "storage_bucket": "agritechcycle-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495464109699:android:b03a254cab6e257aa1edb6",
+        "android_client_info": {
+          "package_name": "com.melatech.agritech_cycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495464109699-rgitciemf29djr68ulevtplo35vdbbs4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCt7n3dFetYiJv4lhgYclS9OKwjhiljM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495464109699-rgitciemf29djr68ulevtplo35vdbbs4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
