@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:melatech/info.dart';
-import 'package:melatech/loginpage.dart';
+import 'package:melatech/Account/loginpage.dart';
 import 'package:melatech/profile.dart';
 
 import 'notification.dart';

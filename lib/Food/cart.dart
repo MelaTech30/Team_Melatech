@@ -109,7 +109,7 @@ class _CartPageState extends State<CartPage> {
                   width: 20,
                 ),
                PopupMenuButton(
-  icon: Icon(Icons.more_vert),
+  icon: const Icon(Icons.more_vert),
   itemBuilder: (BuildContext context) => <PopupMenuEntry>[   
     const PopupMenuItem(child: Text('Caton')),
     const PopupMenuItem(child: Text('Sack')),

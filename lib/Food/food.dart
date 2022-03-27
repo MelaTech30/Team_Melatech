@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/cart.dart';
-import 'package:melatech/options.dart';
-import 'package:melatech/veges.dart';
+import 'package:melatech/Food/cart.dart';
+import 'package:melatech/Food/options.dart';
+import 'package:melatech/Food/veges.dart';
 
 class FoodPage extends StatefulWidget {
   const FoodPage({ Key? key }) : super(key: key);

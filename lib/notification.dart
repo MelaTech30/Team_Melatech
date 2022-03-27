@@ -22,7 +22,7 @@ class notification extends StatelessWidget {
         ),
       ),
       body: ListView(
-        children: <Widget>[],
+        children: const <Widget>[],
       ),
     );
   }

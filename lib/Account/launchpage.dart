@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/accountpage.dart';
-import 'package:melatech/loginpage.dart';
+import 'package:melatech/Account/accountpage.dart';
+import 'package:melatech/Account/loginpage.dart';
 
 class LaunchPage extends StatelessWidget {
   const LaunchPage({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class LaunchPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-           color: Colors.lightGreen,
+           color: Colors.green,
         ),
         child: ListView(
           children: [

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/trash.dart';
+import 'package:melatech/Waste/trash.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class Trash extends StatelessWidget {
   final List<TrashChart> data;
 
-Trash({required this.data});
+ Trash({required this.data});
 
   @override
   Widget build(BuildContext context) {

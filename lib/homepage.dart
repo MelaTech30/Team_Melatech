@@ -1,12 +1,12 @@
 // ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
-import 'package:melatech/food.dart';
-import 'package:melatech/profile.dart';
+import 'package:melatech/Food/food.dart';
+// import 'package:melatech/profile.dart';
 import 'package:melatech/menu.dart';
-import 'package:melatech/waste.dart';
+import 'package:melatech/Waste/waste.dart';
 import 'package:modal_side_sheet/modal_side_sheet.dart';
 
-import 'loginpage.dart';
+// import 'loginpage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -38,17 +38,14 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         decoration: const BoxDecoration(
-          color: Colors.lightGreen,
+          color: Colors.green,
         ),
         child: ListView(
           children: [
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 70, right: 70),
-              child: Card(
-                clipBehavior: Clip.antiAlias,
-                child: Image.asset('image/rec1.png', width: 80, height: 180),
-              ),
+              child: Image.asset('image/rec1.png', width: 80, height: 180),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 80, right: 80),
@@ -75,10 +72,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 30, right: 30),
-              child: Card(
-                clipBehavior: Clip.antiAlias,
-                child: Image.asset('image/image3.png'),
-              ),
+              child: Image.asset('image/image3.png'),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 80, right: 80),

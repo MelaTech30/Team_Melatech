@@ -9,7 +9,7 @@ class StartPage extends StatelessWidget {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.white),
         elevation: 0,
-        backgroundColor: const Color(0xFF4e055a),
+        backgroundColor: Colors.green,
         title: const Center(
             child: Text('Start a Pick Up',
                 style: TextStyle(
@@ -31,7 +31,7 @@ class StartPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 20, right: 40),
             child: Card(
-              color: Color(0xFF4e055a),
+              color: Colors.green,
               child: ListTile(
                 title: Center(
                   child: Text(
@@ -54,7 +54,7 @@ class StartPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 20, right: 40),
             child: Card(
-              color: Color(0xFF4e055a),
+              color: Colors.green,
               child: ListTile(
                 title: Center(
                   child: Text(
@@ -77,7 +77,7 @@ class StartPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 20, right: 40),
             child: Card(
-              color: Color(0xFF4e055a),
+              color: Colors.green,
               child: ListTile(
                 title: Center(
                   child: Text(

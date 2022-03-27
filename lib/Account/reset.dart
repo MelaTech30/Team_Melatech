@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/homepage.dart';
-import 'package:melatech/reset.dart';
+import 'package:melatech/Account/loginpage.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class ResetPage extends StatelessWidget {
+  const ResetPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-           color: Colors.lightGreen,
+          color: Colors.lightGreen,
         ),
         child: ListView(
           children: [
@@ -18,13 +17,12 @@ class LoginPage extends StatelessWidget {
               height: 15,
             ),
             const Center(
-              child: Text(
-                'Login',
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              ),
-            ),
+                child: Text(
+              'Reset Password',
+              style: TextStyle(color: Colors.white, fontSize: 30),
+            )),
             const SizedBox(
-              height: 75,
+              height: 70,
             ),
             Container(
               decoration: BoxDecoration(
@@ -35,7 +33,7 @@ class LoginPage extends StatelessWidget {
                 decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.email),
+                      child: Icon(Icons.email, color: Color(0xFF4e055a)),
                     ),
                     label: Text('Email',
                         style: TextStyle(color: Color(0xFF4e055a))),
@@ -43,7 +41,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 30,
+              height: 10,
             ),
             Container(
               decoration: BoxDecoration(
@@ -54,33 +52,41 @@ class LoginPage extends StatelessWidget {
                 decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.lock),
+                      child: Icon(Icons.lock, color: Color(0xFF4e055a)),
                     ),
-                    label: Text('Password',
+                    label: Text('New Password',
+                        style: TextStyle(color: Color(0xFF4e055a))),
+                    border: OutlineInputBorder(borderSide: BorderSide.none)),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                    icon: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Icon(Icons.lock, color: Color(0xFF4e055a)),
+                    ),
+                    label: Text('Confirm Password',
                         style: TextStyle(color: Color(0xFF4e055a))),
                     border: OutlineInputBorder(borderSide: BorderSide.none)),
               ),
             ),
             const SizedBox(height: 20),
-            Center(
-              child: InkWell(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ResetPage()));
-                  },
-                  child: const Text('Forgot password?')),
-            ),
-            const SizedBox(height: 20),
             Padding(
-              padding: const EdgeInsets.only(left: 60, right: 60),
+              padding: const EdgeInsets.only(left: 70, right: 70),
               child: TextButton(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pop(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomePage()));
+                            builder: (context) => const LoginPage()));
                   },
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -91,7 +97,7 @@ class LoginPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     )),
                   ),
-                  child: const Text('Sign in')),
+                  child: const Text('Confirm')),
             )
           ],
         ),

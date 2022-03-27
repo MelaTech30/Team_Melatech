@@ -15,7 +15,7 @@ class SchedulePage extends StatelessWidget {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const AddPage()));
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.add_box,
                 size: 40,
               ))

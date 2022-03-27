@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/loginpage.dart';
+import 'package:melatech/Account/loginpage.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({Key? key}) : super(key: key);
@@ -9,7 +9,7 @@ class AccountPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          color: Colors.lightGreen,
+          color: Colors.green,
         ),
         child: ListView(
           children: [

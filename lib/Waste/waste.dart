@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:melatech/profile.dart';
-import 'package:melatech/rewards.dart';
-import 'package:melatech/schedulepage.dart';
-import 'package:melatech/start.dart';
+import 'package:melatech/Waste/rewards.dart';
+import 'package:melatech/Waste/schedulepage.dart';
+import 'package:melatech/Waste/start.dart';
 
 class WastePage extends StatelessWidget {
   const WastePage({Key? key}) : super(key: key);
@@ -18,10 +18,10 @@ class WastePage extends StatelessWidget {
             child: Text('Waste Management',
                 style: TextStyle(
                   color: Color(0xFF4e055a),
-                ))),        
-             ),
+                ))),
+      ),
       body: Container(
-        color: const Color(0xFF4e055a),
+        color: Colors.green,
         child: ListView(
           children: [
             const SizedBox(height: 20),
@@ -38,11 +38,7 @@ class WastePage extends StatelessWidget {
                 },
                 child: const Card(
                   child: ListTile(
-                    leading: Icon(
-                      Icons.pin_drop,
-                      size: 50,
-                      color: Color(0xFF4e055a),
-                    ),
+                    leading: CircleAvatar(backgroundColor: Colors.green),
                     title: Text(
                       'Start A Pick up',
                       style: TextStyle(

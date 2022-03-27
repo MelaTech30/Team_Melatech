@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/loginpage.dart';
+import 'package:melatech/homepage.dart';
+import 'package:melatech/Account/reset.dart';
 
-class ResetPage extends StatelessWidget {
-  const ResetPage({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          color: Colors.lightGreen,
+           color: Colors.green,
         ),
         child: ListView(
           children: [
@@ -17,12 +18,13 @@ class ResetPage extends StatelessWidget {
               height: 15,
             ),
             const Center(
-                child: Text(
-              'Reset Password',
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            )),
+              child: Text(
+                'Login',
+                style: TextStyle(fontSize: 20, color: Colors.white),
+              ),
+            ),
             const SizedBox(
-              height: 70,
+              height: 75,
             ),
             Container(
               decoration: BoxDecoration(
@@ -33,7 +35,7 @@ class ResetPage extends StatelessWidget {
                 decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.email, color: Color(0xFF4e055a)),
+                      child: Icon(Icons.email),
                     ),
                     label: Text('Email',
                         style: TextStyle(color: Color(0xFF4e055a))),
@@ -41,7 +43,7 @@ class ResetPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 30,
             ),
             Container(
               decoration: BoxDecoration(
@@ -52,41 +54,33 @@ class ResetPage extends StatelessWidget {
                 decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.lock, color: Color(0xFF4e055a)),
+                      child: Icon(Icons.lock),
                     ),
-                    label: Text('New Password',
-                        style: TextStyle(color: Color(0xFF4e055a))),
-                    border: OutlineInputBorder(borderSide: BorderSide.none)),
-              ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: TextFormField(
-                decoration: const InputDecoration(
-                    icon: Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.lock, color: Color(0xFF4e055a)),
-                    ),
-                    label: Text('Confirm Password',
+                    label: Text('Password',
                         style: TextStyle(color: Color(0xFF4e055a))),
                     border: OutlineInputBorder(borderSide: BorderSide.none)),
               ),
             ),
             const SizedBox(height: 20),
-            Padding(
-              padding: const EdgeInsets.only(left: 70, right: 70),
-              child: TextButton(
-                  onPressed: () {
-                    Navigator.pop(
+            Center(
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const LoginPage()));
+                            builder: (context) => const ResetPage()));
+                  },
+                  child: const Text('Forgot password?')),
+            ),
+            const SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.only(left: 60, right: 60),
+              child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()));
                   },
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -97,7 +91,7 @@ class ResetPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     )),
                   ),
-                  child: const Text('Confirm')),
+                  child: const Text('Sign in')),
             )
           ],
         ),

@@ -2,7 +2,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:melatech/launchpage.dart';
+import 'package:melatech/Account/launchpage.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
