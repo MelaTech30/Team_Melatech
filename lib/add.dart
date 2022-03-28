@@ -32,25 +32,25 @@ class _AddPageState extends State<AddPage> {
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
         title: const Padding(
-          padding:  EdgeInsets.only(left: 30),
-          child:  Text('Create Schedule',
+          padding: EdgeInsets.only(left: 30),
+          child: Text('Create Schedule',
               style: TextStyle(color: Colors.lightBlue)),
         ),
       ),
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: Colors.green,
       body: ListView(
         children: <Widget>[
-         const SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Text(
               'Selected time: ${_time.format(context)}',
-              style: const TextStyle(color: Color(0xFF4e055a), fontSize: 30),
+              style: const TextStyle(color: Colors.white, fontSize: 30),
             ),
           ),
-         const SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
@@ -58,17 +58,17 @@ class _AddPageState extends State<AddPage> {
             child: RaisedButton(
                 onPressed: _selectTime, child: const Text('Select Time')),
           ),
-        const  SizedBox(
+          const SizedBox(
             height: 20,
           ),
-         const Padding(
+          const Padding(
             padding: EdgeInsets.only(left: 10),
             child: Text(
               'Selected day: Monday',
-              style: TextStyle(color: Color(0xFF4e055a), fontSize: 30),
+              style: TextStyle(color: Colors.white, fontSize: 30),
             ),
           ),
-         const SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(

@@ -10,15 +10,10 @@ class LaunchPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-           color: Colors.green,
+          color: Colors.green,
         ),
         child: ListView(
           children: [
-            Image.asset(
-              'image/logo.png',
-              width: 400,
-              height: 400,
-            ),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: TextButton(

@@ -8,7 +8,7 @@ class SchedulePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
+        iconTheme: const IconThemeData(color: Colors.green),
         actions: [
           IconButton(
               onPressed: () {
@@ -16,7 +16,7 @@ class SchedulePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const AddPage()));
               },
               icon: const Icon(
-                Icons.add_box,
+                Icons.add,
                 size: 40,
               ))
         ],
@@ -31,7 +31,7 @@ class SchedulePage extends StatelessWidget {
       ),
       body: Container(
         decoration: const BoxDecoration(
-          color: Color(0xFF4e055a),
+          color: Colors.green,
         ),
         child: ListView(children: [
           const SizedBox(height: 20),

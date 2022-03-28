@@ -28,7 +28,7 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:  Colors.white,
+      backgroundColor: Colors.white,
       body: ListView(
         children: <Widget>[
           Row(
@@ -105,20 +105,21 @@ class _CartPageState extends State<CartPage> {
                     color: Colors.white,
                   ),
                 ),
-                const SizedBox(
-                  width: 20,
+                // const SizedBox(
+                //   width: 10,
+                // ),
+                PopupMenuButton(
+                  icon: const Icon(Icons.arrow_drop_down),
+                  itemBuilder: (BuildContext context) => <PopupMenuEntry>[
+                    const PopupMenuItem(child: Text('Caton')),
+                    const PopupMenuItem(child: Text('Sack')),
+                    const PopupMenuItem(child: Text('Bucket')),
+                  ],
                 ),
-               PopupMenuButton(
-  icon: const Icon(Icons.more_vert),
-  itemBuilder: (BuildContext context) => <PopupMenuEntry>[   
-    const PopupMenuItem(child: Text('Caton')),
-    const PopupMenuItem(child: Text('Sack')),
-    const PopupMenuItem(child: Text('Bucket')),
-  ],
-),
               ],
             ),
           ),
+          
         ],
       ),
     );

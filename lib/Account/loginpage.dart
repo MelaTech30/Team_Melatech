@@ -10,21 +10,21 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-           color: Colors.green,
+          color: Colors.green,
         ),
         child: ListView(
           children: [
             const SizedBox(
-              height: 15,
+              height: 35,
             ),
             const Center(
               child: Text(
                 'Login',
-                style: TextStyle(fontSize: 20, color: Colors.white),
+                style: TextStyle(fontSize: 35, color: Colors.white),
               ),
             ),
             const SizedBox(
-              height: 75,
+              height: 55,
             ),
             Container(
               decoration: BoxDecoration(
@@ -35,10 +35,9 @@ class LoginPage extends StatelessWidget {
                 decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.email),
+                      child: Icon(Icons.email, color: Colors.green),
                     ),
-                    label: Text('Email',
-                        style: TextStyle(color: Color(0xFF4e055a))),
+                    hintText: 'Email',
                     border: OutlineInputBorder(borderSide: BorderSide.none)),
               ),
             ),
@@ -54,10 +53,12 @@ class LoginPage extends StatelessWidget {
                 decoration: const InputDecoration(
                     icon: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Icon(Icons.lock),
+                      child: Icon(
+                        Icons.lock,
+                        color: Colors.green,
+                      ),
                     ),
-                    label: Text('Password',
-                        style: TextStyle(color: Color(0xFF4e055a))),
+                    hintText: 'Password',
                     border: OutlineInputBorder(borderSide: BorderSide.none)),
               ),
             ),
@@ -70,7 +71,10 @@ class LoginPage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const ResetPage()));
                   },
-                  child: const Text('Forgot password?')),
+                  child: const Text(
+                    'Forgot password?',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  )),
             ),
             const SizedBox(height: 20),
             Padding(

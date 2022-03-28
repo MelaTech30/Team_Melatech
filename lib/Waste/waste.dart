@@ -36,17 +36,20 @@ class WastePage extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const StartPage()));
                 },
-                child: const Card(
+                child: Card(
                   child: ListTile(
-                    leading: CircleAvatar(backgroundColor: Colors.green),
-                    title: Text(
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Image.asset('image/pick.png'),
+                    ),
+                    title: const Text(
                       'Start A Pick up',
                       style: TextStyle(
                         color: Color(0xFF4e055a),
                         fontSize: 20,
                       ),
                     ),
-                    subtitle: Text(
+                    subtitle: const Text(
                       'Subscriptions suitable for you',
                       style: TextStyle(
                         color: Color(0xFF4e055a),

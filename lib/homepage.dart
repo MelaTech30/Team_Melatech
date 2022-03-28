@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(5)),
                 color: Colors.lightBlue,
                 child: const Text(
-                  'Farm Produce',
+                  'Groceries',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,

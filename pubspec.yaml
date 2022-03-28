@@ -87,6 +87,7 @@ flutter:
      - image/veg5.jpg
      - image/veg6.jpg
      - image/rec1.png
+     - image/pick.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
