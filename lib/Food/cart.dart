@@ -79,7 +79,7 @@ class _CartPageState extends State<CartPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 FlatButton(
-                  color: const Color(0xFF4e055a),
+                  color: Colors.lightGreen,
                   minWidth: 5,
                   height: 5,
                   shape: RoundedRectangleBorder(
@@ -94,7 +94,7 @@ class _CartPageState extends State<CartPage> {
                 Text('${_count}'),
                 FlatButton(
                   onPressed: _decrementCount,
-                  color: const Color(0xFF4e055a),
+                  color: Colors.lightGreen,
                   minWidth: 5,
                   height: 5,
                   shape: RoundedRectangleBorder(
@@ -119,7 +119,18 @@ class _CartPageState extends State<CartPage> {
               ],
             ),
           ),
-          
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 80, right: 80),
+            child: FlatButton(
+              onPressed: () {},
+              color: Colors.lightGreen,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5)),
+              child:
+                  const Text('Checkout', style: TextStyle(color: Colors.white)),
+            ),
+          )
         ],
       ),
     );

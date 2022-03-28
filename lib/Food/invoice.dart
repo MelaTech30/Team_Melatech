@@ -7,7 +7,12 @@ class InvoicePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Invoice'),
+        title: const Padding(
+          padding: EdgeInsets.only(left: 80),
+          child: Text('Invoice'),
+        ),
+        elevation: 0,
+        backgroundColor: Colors.green,
       ),
     );
   }

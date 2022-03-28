@@ -7,16 +7,18 @@ class notification extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.lightBlue),
-        backgroundColor: Colors.lightGreen,
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: Colors.green,
         elevation: 0,
         title: const Padding(
-          padding: EdgeInsets.only(left: 60, right: 0),
+          padding: EdgeInsets.only(
+            left: 45,
+          ),
           child: Text(
             'Notifications',
             style: TextStyle(
-              color: Colors.lightBlue,
-              fontSize: 25,
+              color: Colors.white,
+              fontSize: 28,
             ),
           ),
         ),

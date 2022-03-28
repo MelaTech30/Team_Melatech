@@ -11,13 +11,13 @@ class WastePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Color(0xFF4e055a)),
+        iconTheme: const IconThemeData(color: Colors.green),
         elevation: 0,
         backgroundColor: Colors.white,
         title: const Center(
             child: Text('Waste Management',
                 style: TextStyle(
-                  color: Color(0xFF4e055a),
+                  color: Colors.green,
                 ))),
       ),
       body: Container(
@@ -75,21 +75,23 @@ class WastePage extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const SchedulePage()));
                 },
-                child: const Card(
+                child: Card(
                   child: ListTile(
-                    leading: Icon(
-                      Icons.delete_outlined,
-                      size: 50,
-                      color: Color(0xFF4e055a),
-                    ),
-                    title: Text(
+                    leading: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Image.asset(
+                          'image/schedule.png',
+                          width: 200,
+                          height: 200,
+                        )),
+                    title: const Text(
                       'Pick up Schedules',
                       style: TextStyle(
                         color: Color(0xFF4e055a),
                         fontSize: 20,
                       ),
                     ),
-                    subtitle: Text(
+                    subtitle: const Text(
                       'Subscriptions suitable for you',
                       style: TextStyle(
                         color: Color(0xFF4e055a),
@@ -113,14 +115,13 @@ class WastePage extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => RewardPage()));
                 },
-                child: const Card(
+                child: Card(
                   child: ListTile(
-                    leading: Icon(
-                      Icons.attach_money,
-                      size: 50,
-                      color: Color(0xFF4e055a),
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Image.asset('image/gift.png'),
                     ),
-                    title: Text(
+                    title: const Text(
                       'Rewards',
                       style: TextStyle(
                         color: Color(0xFF4e055a),

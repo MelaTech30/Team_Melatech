@@ -5,7 +5,7 @@ import 'package:melatech/Waste/trash.dart';
 import 'package:melatech/Waste/trash_chart.dart';
 
 // ignore: use_key_in_widget_constructors
-class  RewardPage extends StatelessWidget {
+class RewardPage extends StatelessWidget {
   final List<TrashChart> data = [
     TrashChart(
       month: 'Jan',
@@ -38,35 +38,20 @@ class  RewardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          iconTheme: const IconThemeData(color: Colors.white),
-          elevation: 0,
-          title: const Center(
-            child: Text(
-              'Reward',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-              ),
+        iconTheme: const IconThemeData(color: Colors.white),
+        elevation: 0,
+        title: const Padding(
+          padding: EdgeInsets.only(left: 60),
+          child: Text(
+            'Reward',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 28,
             ),
           ),
-          backgroundColor: const Color(0xFF4e055a)),
-      // body: Container(
-      //   decoration: const BoxDecoration(
-      //     color: Color(0xFF4e055a)
-      //   ),
-      //   child: Center(
-      //     child:
-      //          Padding(
-      //         padding: const EdgeInsets.all(65),
-      //         child: Card(
-      //               color: Colors.white,
-      //               child: Trash(data: data),
-      //             ),
-      //         ),
-
-      //   ),
-      // ),
-
+        ),
+        backgroundColor: Colors.green,
+      ),
       // ignore: avoid_unnecessary_containers
       body: Container(
         child: ListView(children: [
@@ -89,7 +74,7 @@ class  RewardPage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
-              color: const Color(0xFF4e055a),
+              color: Colors.lightGreen,
               child: const Text(
                 'Claim Reward',
                 style: TextStyle(

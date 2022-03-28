@@ -27,9 +27,7 @@ class Edit extends StatelessWidget {
                     padding: EdgeInsets.all(8.0),
                     child: Icon(Icons.person, color: Color(0xFF4e055a)),
                   ),
-                  label:
-                      Text('Name', style: TextStyle(color: Color(0xFF4e055a))),
-                  border: OutlineInputBorder(borderSide: BorderSide.none)),
+                  hintText: 'Name'),
             ),
           ),
           Container(
@@ -43,9 +41,7 @@ class Edit extends StatelessWidget {
                     padding: EdgeInsets.all(8.0),
                     child: Icon(Icons.email, color: Color(0xFF4e055a)),
                   ),
-                  label:
-                      Text('Email', style: TextStyle(color: Color(0xFF4e055a))),
-                  border: OutlineInputBorder(borderSide: BorderSide.none)),
+                  hintText: 'Email'),
             ),
           ),
           Container(
@@ -55,13 +51,12 @@ class Edit extends StatelessWidget {
             ),
             child: TextFormField(
               decoration: const InputDecoration(
-                  icon: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Icon(Icons.call, color: Color(0xFF4e055a)),
-                  ),
-                  label:
-                      Text('Phone', style: TextStyle(color: Color(0xFF4e055a))),
-                  border: OutlineInputBorder(borderSide: BorderSide.none)),
+                icon: Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Icon(Icons.call, color: Color(0xFF4e055a)),
+                ),
+                hintText: 'Phone',
+              ),
             ),
           ),
           RaisedButton(

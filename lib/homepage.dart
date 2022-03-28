@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.lightBlue),
+        iconTheme: const IconThemeData(color: Colors.green),
         backgroundColor: Colors.white,
         elevation: 0,
         title: const Padding(
@@ -23,15 +23,15 @@ class HomePage extends StatelessWidget {
           child: Text(
             'Home',
             style: TextStyle(
-              color: Colors.lightBlue,
-              fontSize: 25,
+              color: Colors.green,
+              fontSize: 28,
             ),
           ),
         ),
         actions: [
           IconButton(
               onPressed: () {
-                showModalSideSheet(context: context, body: const Menu());
+                showModalSideSheet(context: context, body: Menu());
               },
               icon: const Icon(Icons.menu, size: 30))
         ],
@@ -59,11 +59,11 @@ class HomePage extends StatelessWidget {
                 },
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5)),
-                color: Colors.lightBlue,
+                color: Colors.white,
                 child: const Text(
                   'Recycle',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.green,
                     fontSize: 15,
                   ),
                 ),
@@ -86,11 +86,11 @@ class HomePage extends StatelessWidget {
                 },
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5)),
-                color: Colors.lightBlue,
+                color: Colors.white,
                 child: const Text(
                   'Groceries',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.green,
                     fontSize: 15,
                   ),
                 ),

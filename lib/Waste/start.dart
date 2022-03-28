@@ -26,72 +26,96 @@ class StartPage extends StatelessWidget {
         ],
       ),
       body: ListView(
-        children: const [
-          SizedBox(height: 20),
+        children: [
+          const SizedBox(height: 20),
           Padding(
-            padding: EdgeInsets.only(left: 20, right: 40),
+            padding: const EdgeInsets.only(left: 20, right: 40),
             child: Card(
               color: Colors.green,
               child: ListTile(
-                title: Center(
+                title: const Center(
                   child: Text(
                     'Monthly Subscription',
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
-                subtitle: Center(
-                  child: Text(
-                    'Pick up times will be on weekly bases and payments are to be done at the end of every month. Earn GH₵ 10 on every 100kg waste produced every month.             Amount = GH₵ 15',
-                    style: TextStyle(
-                      color: Colors.white,
+                subtitle: Column(
+                  children: const <Widget>[
+                    Text(
+                      'Pick up times will be on weekly bases and payments are to be done at the end of every month. Earn 5kg worth of vegetables on every 100kg waste produced every month.',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
+                    Text(
+                      'Amount = GH₵ 15',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Padding(
-            padding: EdgeInsets.only(left: 20, right: 40),
+            padding: const EdgeInsets.only(left: 20, right: 40),
             child: Card(
               color: Colors.green,
               child: ListTile(
-                title: Center(
+                title: const Center(
                   child: Text(
                     'Weekly Subscription',
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
-                subtitle: Center(
-                  child: Text(
-                    'Pick up times will be on daily bases and payments are to be done at the end of every week. Earn GH₵ 5 on every 70kg waste produced every week.             Amount = GH₵ 10',
-                    style: TextStyle(
-                      color: Colors.white,
+                subtitle: Column(
+                  children: const <Widget>[
+                    Text(
+                      'Pick up times will be on daily bases and payments are to be done at the end of every week. Earn 2kg worth of vegetables on every 70kg waste produced every week.',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
+                    Text(
+                      'Amount = GH₵ 10',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Padding(
-            padding: EdgeInsets.only(left: 20, right: 40),
+            padding: const EdgeInsets.only(left: 20, right: 40),
             child: Card(
               color: Colors.green,
               child: ListTile(
-                title: Center(
+                title: const Center(
                   child: Text(
                     'Daily Subscription',
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
-                subtitle: Center(
-                  child: Text(
-                    'Pick up times will be on specified and payments are to be made on the days for pickup. Earn GH₵ 3 on every 40kg waste produced on each day.                     Amount = GH₵ 5',
-                    style: TextStyle(
-                      color: Colors.white,
+                subtitle: Column(
+                  children: const <Widget>[
+                    Text(
+                      'Pick up times will be on specified and payments are to be made on the days for pickup. ',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
+                    Text(
+                      'Amount = GH₵ 5',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),

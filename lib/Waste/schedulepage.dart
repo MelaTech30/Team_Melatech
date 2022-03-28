@@ -24,8 +24,8 @@ class SchedulePage extends StatelessWidget {
         title: const Center(
           child: Text('Schedule',
               style: TextStyle(
-                color: Color(0xFF4e055a),
-                fontSize: 20,
+                color: Colors.green,
+                fontSize: 28,
               )),
         ),
       ),

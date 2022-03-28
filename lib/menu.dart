@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:melatech/info.dart';
 import 'package:melatech/Account/loginpage.dart';
 import 'package:melatech/profile.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import 'notification.dart';
 
 class Menu extends StatelessWidget {
-  const Menu({Key? key}) : super(key: key);
-
+  Menu({Key? key}) : super(key: key);
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,6 +105,7 @@ class Menu extends StatelessWidget {
             padding: const EdgeInsets.only(left: 30),
             child: InkWell(
               onTap: () {
+                _auth.signOut();
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const LoginPage()));
               },

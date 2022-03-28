@@ -42,6 +42,8 @@ dependencies:
   rename: ^2.0.1
   firebase_core: ^1.13.1
   firebase_database: ^9.0.8
+  firebase_auth: ^3.3.11
+  
 
 
 
@@ -88,6 +90,8 @@ flutter:
      - image/veg6.jpg
      - image/rec1.png
      - image/pick.png
+     - image/gift.png
+     - image/schedule.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
