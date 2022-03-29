@@ -49,7 +49,7 @@ class _CartPageState extends State<CartPage> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Image.asset(
-                    'image/veg1.jpg',
+                    'assets/image/veges/veg1.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),

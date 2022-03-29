@@ -1,0 +1,34 @@
+{
+    "Vegetables": {
+      "01": {
+        "name": "Tomatoes",
+        "price": "0.3",
+        "image": "assets/image/veges/veg1.jpg"
+      },
+      "02": {
+        "name": "Onions",
+        "price": "0.3",
+        "image": "assets/image/veges/veg2.jpg"
+      },
+      "03": {
+        "name": "Bell Pepper",
+        "price": "0.2",
+        "image": "assets/image/veges/veg3.jpg"
+      },
+      "04": {
+        "name": "Carrots",
+        "price": "2",
+        "image": "assets/image/veges/veg4.jpg"
+      },
+      "05": {
+        "name": "Cabbages",
+        "price": "5.0",
+        "image": "assets/image/veges/veg5.jpg"
+      },
+      "06": {
+        "name": "Sweet Pepper",
+        "price": "0.5",
+        "image": "assets/image/veges/veg6.jpg"
+      }
+    }
+  }

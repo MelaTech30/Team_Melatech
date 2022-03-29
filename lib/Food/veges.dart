@@ -32,7 +32,7 @@ class VegesPage extends StatelessWidget {
                       shape: BoxShape.rectangle,
                     ),
                     child: Image.asset(
-                      'image/veg1.jpg',
+                      'assets/image/veges/veg1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -88,7 +88,7 @@ class VegesPage extends StatelessWidget {
                       shape: BoxShape.rectangle,
                     ),
                     child: Image.asset(
-                      'image/veg2.jpg',
+                      'assets/image/veges/veg2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -144,7 +144,7 @@ class VegesPage extends StatelessWidget {
                       shape: BoxShape.rectangle,
                     ),
                     child: Image.asset(
-                      'image/veg3.jpg',
+                      'assets/image/veges/veg3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -200,7 +200,7 @@ class VegesPage extends StatelessWidget {
                       shape: BoxShape.rectangle,
                     ),
                     child: Image.asset(
-                      'image/veg4.jpg',
+                      'assets/image/veges/veg4.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -256,7 +256,7 @@ class VegesPage extends StatelessWidget {
                       shape: BoxShape.rectangle,
                     ),
                     child: Image.asset(
-                      'image/veg5.jpg',
+                      'assets/image/veges/veg5.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -312,7 +312,7 @@ class VegesPage extends StatelessWidget {
                       shape: BoxShape.rectangle,
                     ),
                     child: Image.asset(
-                      'image/veg6.jpg',
+                      'assets/image/veges/veg6.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

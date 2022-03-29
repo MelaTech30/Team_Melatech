@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/add.dart';
+import 'package:melatech/Home/add.dart';
+
+import '../Home/add.dart';
 
 class SchedulePage extends StatelessWidget {
   const SchedulePage({Key? key}) : super(key: key);

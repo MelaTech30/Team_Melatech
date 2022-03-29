@@ -5,7 +5,8 @@ import 'package:charts_flutter/flutter.dart' as charts;
 class Trash extends StatelessWidget {
   final List<TrashChart> data;
 
- Trash({required this.data});
+// ignore: use_key_in_widget_constructors
+const Trash({required this.data});
 
   @override
   Widget build(BuildContext context) {

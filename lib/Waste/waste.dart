@@ -25,7 +25,7 @@ class WastePage extends StatelessWidget {
         child: ListView(
           children: [
             const SizedBox(height: 20),
-            Image.asset('image/new.png', width: 200, height: 200),
+            Image.asset('assets/image/others/new.png', width: 200, height: 200),
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 30),
@@ -40,7 +40,7 @@ class WastePage extends StatelessWidget {
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
-                      child: Image.asset('image/pick.png'),
+                      child: Image.asset('assets/image/icons/pick.png'),
                     ),
                     title: const Text(
                       'Start A Pick up',
@@ -56,7 +56,7 @@ class WastePage extends StatelessWidget {
                         fontSize: 10,
                       ),
                     ),
-                    trailing: Icon(
+                    trailing: const Icon(
                       Icons.arrow_forward,
                       size: 20,
                       color: Color(0xFF4e055a),
@@ -80,7 +80,7 @@ class WastePage extends StatelessWidget {
                     leading: CircleAvatar(
                         backgroundColor: Colors.white,
                         child: Image.asset(
-                          'image/schedule.png',
+                          'assets/image/icons/schedule.png',
                           width: 200,
                           height: 200,
                         )),
@@ -98,7 +98,7 @@ class WastePage extends StatelessWidget {
                         fontSize: 10,
                       ),
                     ),
-                    trailing: Icon(
+                    trailing: const Icon(
                       Icons.arrow_forward,
                       size: 20,
                       color: Color(0xFF4e055a),
@@ -119,7 +119,7 @@ class WastePage extends StatelessWidget {
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
-                      child: Image.asset('image/gift.png'),
+                      child: Image.asset('assets/image/icons/gift.png'),
                     ),
                     title: const Text(
                       'Rewards',
@@ -128,14 +128,14 @@ class WastePage extends StatelessWidget {
                         fontSize: 20,
                       ),
                     ),
-                    subtitle: Text(
+                    subtitle: const Text(
                       'Subscriptions suitable for you',
                       style: TextStyle(
                         color: Color(0xFF4e055a),
                         fontSize: 10,
                       ),
                     ),
-                    trailing: Icon(
+                    trailing: const Icon(
                       Icons.arrow_forward,
                       size: 20,
                       color: Color(0xFF4e055a),

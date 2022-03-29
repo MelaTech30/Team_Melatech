@@ -20,7 +20,7 @@ class _AccountPageState extends State<AccountPage> {
         print(user);
 
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return LoginPage();
+          return const LoginPage();
         }));
       }
     });
@@ -29,6 +29,7 @@ class _AccountPageState extends State<AccountPage> {
   @override
   void initState() {
     super.initState();
+    // ignore: unnecessary_this
     this.checkAuthentification();
   }
 

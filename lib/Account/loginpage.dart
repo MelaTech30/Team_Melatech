@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
         print(user);
 
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return HomePage();
+          return const HomePage();
         }));
       }
     });
@@ -52,14 +52,14 @@ class _LoginPageState extends State<LoginPage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('ERROR'),
+            title: const Text('ERROR'),
             content: Text(errormessage),
             actions: <Widget>[
               FlatButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text('OK'))
+                  child: const Text('OK'))
             ],
           );
         });

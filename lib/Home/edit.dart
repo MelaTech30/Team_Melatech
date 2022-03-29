@@ -64,7 +64,7 @@ class Edit extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             onPressed: () {
               Navigator.pop(context,
-                  MaterialPageRoute(builder: (context) => ProfilePage()));
+                  MaterialPageRoute(builder: (context) => const ProfilePage()));
             },
             child: const Text('Confirm'),
           ),

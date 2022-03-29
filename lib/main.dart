@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:melatech/Account/launchpage.dart';
 // ignore: unused_import
 import 'package:melatech/Account/splash.dart';
-import 'package:melatech/new_signup.dart';
+
 
 // ignore: unused_import
 import 'homepage.dart';
-import 'new_login.dart';
+
 
 // import 'accountpage.dart';
 

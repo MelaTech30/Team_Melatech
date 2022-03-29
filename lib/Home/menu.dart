@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:melatech/info.dart';
+import 'package:melatech/Home/info.dart';
 import 'package:melatech/Account/loginpage.dart';
-import 'package:melatech/profile.dart';
+import 'package:melatech/Home/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'notification.dart';
