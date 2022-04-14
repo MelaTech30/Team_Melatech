@@ -13,7 +13,9 @@ class LaunchPage extends StatelessWidget {
           color: Colors.green,
         ),
         child: ListView(
-          children: [
+          children: <Widget> [
+            Image.asset('assets/image/logos/newlogo.png'),
+           const SizedBox( height: 30),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: TextButton(

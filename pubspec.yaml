@@ -91,6 +91,7 @@ flutter:
      - assets/image/icons/pick.png
      - assets/image/icons/gift.png
      - assets/image/icons/schedule.png
+     - assets/image/logos/newlogo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

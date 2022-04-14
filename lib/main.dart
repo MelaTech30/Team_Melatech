@@ -5,10 +5,8 @@ import 'package:melatech/Account/launchpage.dart';
 // ignore: unused_import
 import 'package:melatech/Account/splash.dart';
 
-
 // ignore: unused_import
 import 'homepage.dart';
-
 
 // import 'accountpage.dart';
 
@@ -41,14 +39,13 @@ class MyApp extends StatelessWidget {
             if (snapshot.hasError) {
               print('You have an error ${snapshot.error.toString()}');
               return const Text('Something went wrong!');
-            } else if (snapshot.hasData) {
-              // return const NewSignUp();
+            } else if (snapshot.hasData) {              
               return AnimatedSplashScreen(
                   splash: SizedBox(
                     width: 500,
                     height: 500,
                     child: Image.asset(
-                      'image/yet.png',
+                      'assets/image/others/yet.png',
                     ),
                   ),
                   duration: 2000,
