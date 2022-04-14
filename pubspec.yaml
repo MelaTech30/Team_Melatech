@@ -51,7 +51,7 @@ dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "image/nev.png"
+  image_path: "assets/image/logos/agritech.png"
 
 dev_dependencies:
   flutter_test:

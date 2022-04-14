@@ -56,41 +56,16 @@ class SchedulePage extends StatelessWidget {
                   ),
                 ),
                 subtitle: Column(children: <Widget>[
-                  const Padding(
-                    padding: EdgeInsets.only(right: 80, left: 0),
-                    child: Text(
-                      'Pick up time',
-                      style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  Row(children: <Widget>[
-                    CircleAvatar(
-                      radius: 15,
-                      backgroundColor: Colors.white,
-                      child: Image.asset('image/new.png'),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Text(
-                      'Recyclables',
-                      style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
-                    ),
-                    const SizedBox(
-                      width: 30,
-                    ),
-                    const Icon(
+                  Row(children: const <Widget>[
+                    Icon(
                       Icons.delete_outline_outlined,
                       size: 30,
                       color: Color(0xFF4e055a),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 10,
                     ),
-                    const Text(
+                    Text(
                       'Organic',
                       style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
                     )
@@ -111,7 +86,7 @@ class SchedulePage extends StatelessWidget {
                 title: const Padding(
                   padding: EdgeInsets.only(bottom: 20),
                   child: Center(
-                    child: Text('Monday',
+                    child: Text('Wednesday',
                         style: TextStyle(
                           color: Color(0xFF4e055a),
                           fontSize: 30,
@@ -119,41 +94,16 @@ class SchedulePage extends StatelessWidget {
                   ),
                 ),
                 subtitle: Column(children: <Widget>[
-                  const Padding(
-                    padding: EdgeInsets.only(right: 80, left: 0),
-                    child: Text(
-                      'Pick up time',
-                      style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 25,
-                  ),
-                  Row(children: <Widget>[
-                    CircleAvatar(
-                      radius: 15,
-                      backgroundColor: Colors.white,
-                      child: Image.asset('image/new.png'),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Text(
-                      'Recyclables',
-                      style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Icon(
+                  Row(children: const <Widget>[
+                    Icon(
                       Icons.delete_outline_outlined,
                       size: 30,
                       color: Color(0xFF4e055a),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 10,
                     ),
-                    const Text(
+                    Text(
                       'Organic',
                       style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
                     )
@@ -174,7 +124,7 @@ class SchedulePage extends StatelessWidget {
                 title: const Padding(
                   padding: EdgeInsets.only(bottom: 20),
                   child: Center(
-                    child: Text('Monday',
+                    child: Text('Saturday',
                         style: TextStyle(
                           color: Color(0xFF4e055a),
                           fontSize: 30,
@@ -182,21 +132,11 @@ class SchedulePage extends StatelessWidget {
                   ),
                 ),
                 subtitle: Column(children: <Widget>[
-                  const Padding(
-                    padding: EdgeInsets.only(right: 80, left: 0),
-                    child: Text(
-                      'Pick up time',
-                      style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
                   Row(children: <Widget>[
                     CircleAvatar(
                       radius: 15,
-                      backgroundColor: Colors.white,
-                      child: Image.asset('image/new.png'),
+                      backgroundColor: Colors.green,
+                      child: Image.asset('assets/image/others/new.png'),
                     ),
                     const SizedBox(
                       width: 10,
@@ -205,21 +145,6 @@ class SchedulePage extends StatelessWidget {
                       'Recyclables',
                       style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
                     ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Icon(
-                      Icons.delete_outline_outlined,
-                      size: 30,
-                      color: Color(0xFF4e055a),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Text(
-                      'Organic',
-                      style: TextStyle(color: Color(0xFF4e055a), fontSize: 20),
-                    )
                   ]),
                 ]),
               ),
