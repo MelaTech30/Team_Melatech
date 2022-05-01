@@ -24,7 +24,23 @@ class notification extends StatelessWidget {
         ),
       ),
       body: ListView(
-        children: const <Widget>[],
+        children: const <Widget>[
+          SizedBox(height: 20),
+          Card(
+            color: Colors.green,
+            clipBehavior: Clip.antiAlias,
+            child: ListTile(
+              subtitle: Text(
+                'Your reward is 5kg of onions which will be delivered to your...',
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              trailing: Icon(
+                Icons.notifications,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
