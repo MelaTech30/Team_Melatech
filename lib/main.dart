@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:melatech/Account/launchpage.dart';
 // ignore: unused_import
@@ -13,11 +14,20 @@ import 'homepage.dart';
 // import 'launchpage.dart';
 // import 'loginpage.dart';
 
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  FirebaseMessaging.onBackgroundMessage(backroundHandler);
 
   runApp(MyApp());
 }
+
+Future<void> backroundHandler(RemoteMessage message) async {
+  print(" This is message from background");
+  print(message.notification!.title);
+  print(message.notification!.body);
+}
+
 
 class MyApp extends StatelessWidget {
   final Future<FirebaseApp> _fbApp = Firebase.initializeApp();
