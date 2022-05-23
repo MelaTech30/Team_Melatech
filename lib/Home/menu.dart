@@ -38,9 +38,15 @@ class Menu extends StatelessWidget {
               },
               child: Row(
                 children: const <Widget>[
-                  Icon(Icons.person),
+                  Icon(
+                    Icons.person,
+                    color: Color(0xff5eb000),
+                  ),
                   SizedBox(width: 10),
-                  Text('Profile'),
+                  Text('Profile',
+                      style: TextStyle(
+                        color: Color(0xff5eb000),
+                      )),
                 ],
               ),
             ),
@@ -59,9 +65,15 @@ class Menu extends StatelessWidget {
               },
               child: Row(
                 children: const <Widget>[
-                  Icon(Icons.notifications),
+                  Icon(
+                    Icons.notifications,
+                    color: Color(0xff5eb000),
+                  ),
                   SizedBox(width: 10),
-                  Text('Notifications'),
+                  Text('Notifications',
+                      style: TextStyle(
+                        color: Color(0xff5eb000),
+                      )),
                 ],
               ),
             ),
@@ -78,9 +90,15 @@ class Menu extends StatelessWidget {
               },
               child: Row(
                 children: const <Widget>[
-                  Icon(Icons.info),
+                  Icon(
+                    Icons.info,
+                    color: Color(0xff5eb000),
+                  ),
                   SizedBox(width: 10),
-                  Text('App Info'),
+                  Text('App Info',
+                      style: TextStyle(
+                        color: Color(0xff5eb000),
+                      )),
                 ],
               ),
             ),
@@ -92,9 +110,15 @@ class Menu extends StatelessWidget {
             padding: const EdgeInsets.only(left: 30),
             child: Row(
               children: const <Widget>[
-                Icon(Icons.chat),
+                Icon(
+                  Icons.chat,
+                  color: Color(0xff5eb000),
+                ),
                 SizedBox(width: 10),
-                Text('Feedback'),
+                Text('Feedback',
+                    style: TextStyle(
+                      color: Color(0xff5eb000),
+                    )),
               ],
             ),
           ),
@@ -111,9 +135,15 @@ class Menu extends StatelessWidget {
               },
               child: Row(
                 children: const <Widget>[
-                  Icon(Icons.logout),
+                  Icon(
+                    Icons.logout,
+                    color: Color(0xff5eb000),
+                  ),
                   SizedBox(width: 10),
-                  Text('Logout'),
+                  Text('Logout',
+                      style: TextStyle(
+                        color: Color(0xff5eb000),
+                      )),
                 ],
               ),
             ),
